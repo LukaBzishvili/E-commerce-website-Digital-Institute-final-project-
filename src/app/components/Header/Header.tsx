@@ -39,7 +39,7 @@ const Header: React.FC<HeaderProps> = ({ products }) => {
       className={`relative px-3 py-2 flex flex-col items-center justify-center mb-[100px]`}
     >
       <nav
-        className={`flex justify-between fixed py-[20px] z-[10] shadow-lg max-w-screen-xl px-[25px] top-[0] w-full ${
+        className={`flex justify-between fixed py-[20px] z-[999] shadow-lg max-w-screen-xl px-[25px] top-[0] w-full ${
           isDark ? `bg-[#363535]` : `bg-[#f1f3f6]`
         }`}
       >
