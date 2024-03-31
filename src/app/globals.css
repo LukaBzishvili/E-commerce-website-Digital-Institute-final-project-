@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-scrollbar {
+  scrollbar-width: none;
+}
+
+Image {
+  width: 100%;
+  height: auto;
+}
+
+#priceRange::-webkit-slider-thumb {
+  background-color: #000;
+}
+
+/*  */
+
+@layer utilities {
+  @variants responsive {
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+}
